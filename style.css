@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+}
+header{
+    background-image: url('img/1.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: #ffffff;
+    font-size: 70px;
+}
+/*-------------Navigation---------*/
+.fly{
+    position: fixed;
+    width: 100%;
+    background: #333;
+    height: -45px;
+}
+.nav{
+    margin: auto;
+    background: #333;
+    height: 40px;
+
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.nav ul li{
+    float: left;
+    }
+.nav ul li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.nav ul li a:hover{
+background-color: #111;
+}
+.nav li.icon{
+display: none;
+}
+
+/*-------------About Me------------*/
+/*.pagemain{
+    /*background-image:url('img/ppp.jpg');
+    padding:64px;
+    max-width: 800px;
+}
+.pagemain h3{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.border{
+    margin-bottom: 40px;
+    height: 3px;
+    width: 160px;
+    margin: auto;
+    display: block;
+    background: #c5ecfd;
+}
+/*.pagemain img{
+    margin-bottom: 40px;
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.main p{
+    width:500px;
+    height:300px;
+    background: #ffffff;
+    text-align: center;
+}*/
+
+/*.sidebar{
+    float: right;
+    padding: 25px 15px 10px 15px;
+}*/
+
+.pagesection{
+  font-family: 'Lora';
+  background-color: #c9a1a1;
+  padding: 5% 10%;
+
+}
+.pagesection h1{
+  text-align: center;
+}
+.pagesection img{
+  max-width: 50%;
+  position: center;
+}
+.section-heading{
+  text-align: center;
+}
+.bg-faded {
+  background-color:rgb(143, 188, 144);
+  margin-left: 30px;
+  margin-right: 200px;
+  padding: 10px 10px;
+}
+.about-heading .about-heading-content {
+  margin-top: -5rem;
+  position: relative;
+  z-index: 1;
+}
+.section-hobi{
+    width: 500px;
+    height: 300px;
+    border: 10px solid white;
+    background-color:#FF7F50;  
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+/*----------------------Gallery--------------*/
+.page-gallery{
+  padding: 10px 10px;
+}
+.page-gallery h1{
+text-align: center;
+margin-bottom: 40px;
+}
+.img-gallery li{
+  display:inline;
+}
+.img-gallery img{
+  margin: 12px;
+  width: 300px;
+  height: 200px;
+}
+
+/*----------------------Contact--------------*/
+.wrapper{
+    /*position:absolute;
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+    width: 100%; 
+    background-color: #000;
+}
+.wrapper h3{
+    text-align: center;
+    color: #fff;
+}
+.form{
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 15px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    width: 50%;
+}
+.msg{
+    width: 50%;
+}
+.input,
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #c5ecfd;
+    padding: 10px;
+    width: 90%;
+    color: #ffffff;
+}
+.msg textarea{
+    height: 200px;
+}
+.btn{
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: aqua;
+}
+/*.social-media ul{
+  position: absolute;
+  display: flex;
+
+}*/
+/*----------Page Footer-----------*/
+.pgfooter{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 20px 0px;
+  line-height: 50px;
+  background: #FF7F50;
+  color: #fff;
+}
+.pgfooter h3{
+  text-align: center;
+  font-family: 'Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif';
+}
+.social-media{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.social-media ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.social-media ul li{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+  background: #fff;
+  border-radius: 50%;
+}
+.footer-bottom{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: #FF7F50;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+  color: #111;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*------------Nav------------*/
+@media screen and (max-width:600px) {
+    .nav ul li/*:not(:first-child)*/ {
+        display: none;
+    }
+    .nav ul li.icon {
+      float: left;
+      display: inline-block;
+    }
+  }
+/*----------Display list Nav-------*/
+@media screen and (max-width:600px) {
+    .nav.responsive ul {position: relative;}
+    .nav.responsive ul li.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive ul li {
+      float: none;
+      display: inline;
+    }
+    .nav.responsive ul li a {
+      display: block;
+      text-align: center;
+    }
+  }
+@media (max-width: 600px) {
+    .intro .intro-img {
+      width: 75%;
+      float: right;
+    }
+    .intro .intro-text {
+      left: 0;
+      width: 60%;
+      margin-top: 3rem;
+      position: absolute;
+    }
+    .intro .intro-text .intro-button {
+      width: 100%;
+      left: 0;
+      position: absolute;
+      bottom: -2rem;
+    }
+  }
+  /*---------------Header----------------*/
+  @media (max-width: 680px){
+    .title h1{
+        color: #ffffff;
+        font-size: 25px;
+    }
+  }
+  /*--------------Gallery-----------------*/
+  @media only screen and (max-width: 600px){
+  .img-gallery img{
+    margin: 15px 15px;;
+    width: 300px;
+    height: 200px;
+    float: center;
+  }
+}
+/*---------------------About Me------------------*/
+@media only screen and (max-width: 600px){
+  .pagesection img{
+    max-width: 65%;
+    position: center;
+  }
+  .section-heading{
+    text-align: center;
+  }
+  .bg-faded {
+    background-color:rgb(143, 188, 144);
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+  .about-heading .about-heading-content {
+    margin-top: 0px;
+    position: relative;
+    z-index: none;
+  }
+  .section-hobi{
+      width: 350px;
+      height: 200px;
+      border: 10px solid white;
+      background-color:#FF7F50;  
+      padding: 5px 5px;
+      border-radius: 5px;
+      font-size: 12px;
+  }
+}
+  @media only screen and (min-width: 600px){
+    .form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+
+}
